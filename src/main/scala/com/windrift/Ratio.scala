@@ -9,15 +9,18 @@ object Ratio {
     val p2 = new Pair[Int, Int](3052, 4572)
     val p3 = new Pair[Int, Int](4099, 5178)
     val p3_1 = new Pair[Int, Int](4431, 5178)
-    println(ratio(p3_1))
-    println(ratio(p3))
+    val p2p3 = new Pair[Int, Int](3052, 5178)
+    println(goldenSection(new Pair[Int, Int] (4099, 5178)))
 
   }
 
-  def ratio(input: Pair[Int, Int]): (Int, Int, Int) = {
-    val v1 = input._1 + (input._2 - input._1) * 0.382
-    val v2 = input._1 + (input._2 - input._1) * 0.5
-    val v3 = input._1 + (input._2 - input._1) * 0.618
-    (v1.toInt, v2.toInt, v3.toInt)
+  def goldenSection(input: Pair[Int, Int]): (Int, Int, Int, Int, Int) = {
+//    0． 191、0．382、0．5、0．618、0．809
+    val v1 = input._1 + (input._2 - input._1) * 0.191
+    val v2 = input._1 + (input._2 - input._1) * 0.382
+    val v3 = input._1 + (input._2 - input._1) * 0.5
+    val v4 = input._1 + (input._2 - input._1) * 0.618
+    val v5 = input._1 + (input._2 - input._1) * 0.809
+    (v1.toInt, v2.toInt, v3.toInt, v4.toInt, v5.toInt)
   }
 }
