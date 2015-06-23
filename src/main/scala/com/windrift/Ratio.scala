@@ -10,12 +10,14 @@ object Ratio {
     val p3 = new Pair[Int, Int](4099, 5178) //(4305,4511,4638,4765,4971)
     val p3_1 = new Pair[Int, Int](4432, 5178) //(4574,4716,4805,4893,5035)
     val p2p3 = new Pair[Int, Int](3052, 5178) //(3458,3864,4115,4365,4771)
-    println(goldenSection(new Pair[Int, Int] (4432, 5178)))
+    val a = new Pair[Int, Int](5178, 4264) //(5003,4828,4721,4613,4438)
+    val a1 = new Pair[Int, Int] (4983, 4264) //(4845,4708,4623,4538,4401)
+    println(goldenSection(a1))
 
   }
 
   def goldenSection(input: Pair[Int, Int]): (Int, Int, Int, Int, Int) = {
-//    0.191、0．382、0．5、0．618、0．809
+//    0.191, 0.382, 0.5, 0.618, 0.809
     val v1 = input._1 + (input._2 - input._1) * 0.191
     val v2 = input._1 + (input._2 - input._1) * 0.382
     val v3 = input._1 + (input._2 - input._1) * 0.5
