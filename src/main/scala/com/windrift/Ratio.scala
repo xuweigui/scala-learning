@@ -10,9 +10,9 @@ object Ratio {
     val p3 = new Pair[Int, Int](4099, 5178) //(4305,4511,4638,4765,4971)
     val p3_1 = new Pair[Int, Int](4432, 5178) //(4574,4716,4805,4893,5035)
     val p2p3 = new Pair[Int, Int](3052, 5178) //(3458,3864,4115,4365,4771)
-    val a = new Pair[Int, Int](5178, 4264) //(5003,4828,4721,4613,4438)
-    val a1 = new Pair[Int, Int] (4983, 4264) //(4845,4708,4623,4538,4401)
-    println(goldenSection(a1))
+    val p1p3 = new Pair[Int, Int](2279, 5178) //(2832,3386,3728,4070,4624)
+    val a = new Pair[Int, Int](5178, 3373) //(4833,4488,4275,4062,3717)
+    println(goldenSection(a))
 
   }
 
