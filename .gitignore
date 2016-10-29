@@ -20,3 +20,4 @@ target
 # buffer files
 *~
 
+/.project

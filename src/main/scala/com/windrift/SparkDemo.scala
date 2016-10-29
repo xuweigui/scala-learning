@@ -1,7 +1,7 @@
 package com.windrift
 
 import org.apache.spark.rdd.RDD
-import org.apache.spark.{SparkContext, SparkConf}
+import org.apache.spark.{SparkConf, SparkContext}
 
 /**
  * Created by gary on 15/06/15.
